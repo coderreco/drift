@@ -67,7 +67,7 @@ const products1 = [
   {
     id: 1,
     name: 'OSX LTD',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$140',
@@ -76,7 +76,7 @@ const products1 = [
   {
     id: 2,
     name: 'Contact Pedals',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/contact-gunmetal_1200x.jpg?v=1588093586',
     imageAlt: "Front of bike pedal in gunmetal.",
     price: '$155',
@@ -85,7 +85,7 @@ const products1 = [
   {
     id: 3,
     name: 'OSX LTD',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$140',
@@ -97,7 +97,7 @@ const products2 = [
   {
     id: 1,
     name: 'OSX LTD',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$140',
@@ -106,7 +106,7 @@ const products2 = [
   {
     id: 2,
     name: 'Contact Pedals',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/contact-gunmetal_1200x.jpg?v=1588093586',
     imageAlt: "Front of bike pedal in gunmetal.",
     price: '$155',
@@ -115,7 +115,7 @@ const products2 = [
   {
     id: 3,
     name: 'OSX LTD',
-    href: '#',
+    href: '/product',
     imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$140',
