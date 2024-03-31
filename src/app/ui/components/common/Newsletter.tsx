@@ -14,14 +14,16 @@
 */
 export default function Newsletter() {
   return (
-    <div className="bg-white py-16 sm:py-24">
+    <div className=" py-16 sm:py-24">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-mark-air bg-fixed px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <div className="relative isolate overflow-hidden bg-right-top bg-mark-air px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+          <div className="absolute inset-0 bg-black bg-opacity-50" />
+          <div className="relative z-10 max-w-2xl mx-auto text-center">
+          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Get in the know
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-            Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
+            Sign up for our newsletter to stay up to date on the latest news and events.
           </p>
           <form className="mx-auto mt-10 flex max-w-md gap-x-4">
             <label htmlFor="email-address" className="sr-only">
@@ -33,16 +35,17 @@ export default function Newsletter() {
               type="email"
               autoComplete="email"
               required
-              className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+              className="min-w-0 flex-auto rounded-md border-0 /5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
               placeholder="Enter your email"
             />
             <button
               type="submit"
-              className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="flex-none rounded-md bg-emerald-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Notify me
             </button>
-          </form>
+            </form>
+          </div>
           {/* <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"

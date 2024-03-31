@@ -15,23 +15,16 @@ import { JSX, SVGProps } from "react"
   ```
 */
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+  services: [
+    { name: 'Basic', href: '#' },
+    { name: 'Pro', href: '#' },
+    { name: 'Overhaul', href: '#' },
+    { name: 'Custom', href: '#' },
   ],
   company: [
     { name: 'About', href: '#' },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
     { name: 'Partners', href: '#' },
   ],
   legal: [
@@ -76,19 +69,6 @@ const navigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
-      icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
-    {
       name: 'YouTube',
       href: '#',
       icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
@@ -106,7 +86,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -117,7 +97,7 @@ export default function Footer() {
               <div>
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.services.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
@@ -129,7 +109,7 @@ export default function Footer() {
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">Support</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                         {item.name}
@@ -140,18 +120,6 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">Company</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -181,13 +149,13 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                className="w-full min-w-0 appearance-none rounded-md border-0  px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                 placeholder="Enter your email"
               />
               <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex w-full items-center justify-center rounded-md bg-emerald-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
                 >
                   Subscribe
                 </button>

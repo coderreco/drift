@@ -5,7 +5,7 @@ const posts = [
   {
     id: 1,
     title: 'Now carrying Chromag parts!',
-    href: '#',
+    href: '/post',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl:
@@ -22,7 +22,7 @@ const posts = [
   {
     id: 2,
     title: 'New bike models in stock!',
-    href: '#',
+    href: '/post',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl: 'https://chromagbikes.com/cdn/shop/files/chromag-lowdown-suspensionrevised--WEB_1000x.jpg?v=1706137830',
@@ -37,7 +37,7 @@ const posts = [
   {
     id: 3,
     title: 'We are open for business!',
-    href: '#',
+    href: '/post',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl: markEndo,
@@ -53,7 +53,7 @@ const posts = [
 
 export default function FeaturedPosts() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
@@ -80,7 +80,7 @@ export default function FeaturedPosts() {
                     <circle cx={1} cy={1} r={1} />
                   </svg>
                   <div className="flex gap-x-2.5">
-                    <img src={post.author.imageUrl} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
+                    <img src={post.author.imageUrl} alt="" className="h-6 w-6 flex-none rounded-full /10" />
                     {post.author.name}
                   </div>
                 </div>

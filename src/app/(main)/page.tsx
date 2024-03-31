@@ -17,7 +17,7 @@ export default function Page() {
       <FeatureWithImage eyebrow="Supporting riders" heading="A community shop" subheading="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione." />
       <Services />
       <FeaturedProducts />
-      <CenteredFeature video='https://ev1.pinkbike.org/v1920/41/pbvid-417386.mp4' eyebrow="Featured collection" heading="Forbidden Bike Company" text="Introducing Forbidden Bike Company, the ultimate collection of high-performance bikes designed for thrill-seekers and adventure enthusiasts. Experience the power, speed, and precision that will take your riding to new heights. Get ready to conquer the trails and embrace the adrenaline rush." />
+      <CenteredFeature video='https://ev1.pinkbike.org/v1920/41/pbvid-417386.mp4' eyebrow="Announcement" heading="Forbidden Bike Company" text="Introducing Forbidden Bike Company, the ultimate collection of high-performance bikes designed for thrill-seekers and adventure enthusiasts. Experience the power, speed, and precision that will take your riding to new heights. Get ready to conquer the trails and embrace the adrenaline rush." />
       <FeaturedPosts />
       <Newsletter />
       <Testimonial />

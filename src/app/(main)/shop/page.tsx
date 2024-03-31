@@ -5,6 +5,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import rizaBlack from '@/app/ui/images/parts/riza/chromag-riza-stem-black.jpg'
+
 
 const sortOptions = [
   { name: 'Most Popular', href: '#' },
@@ -64,63 +66,61 @@ const filters = [
 const products1 = [
   {
     id: 1,
-    name: 'Focus Paper Refill',
+    name: 'OSX LTD',
     href: '#',
-    price: '$13',
-    description: '3 sizes available',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-01.jpg',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$140',
+    color: 'Black',
   },
   {
     id: 2,
-    name: 'Focus Card Holder',
+    name: 'Contact Pedals',
     href: '#',
-    price: '$64',
-    description: 'Walnut',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-02.jpg',
-    imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/contact-gunmetal_1200x.jpg?v=1588093586',
+    imageAlt: "Front of bike pedal in gunmetal.",
+    price: '$155',
+    color: 'Gunmetal',
   },
   {
     id: 3,
-    name: 'Focus Carry Pouch',
+    name: 'OSX LTD',
     href: '#',
-    price: '$32',
-    description: 'Heather Gray',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-03.jpg',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
-  },
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$140',
+    color: 'Black',
+  }
   // More products...
 ]
 const products2 = [
   {
-    id: 7,
-    name: 'Electric Kettle',
+    id: 1,
+    name: 'OSX LTD',
     href: '#',
-    price: '$149',
-    description: 'Black',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-07.jpg',
-    imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$140',
+    color: 'Black',
   },
   {
-    id: 8,
-    name: 'Leather Workspace Pad',
+    id: 2,
+    name: 'Contact Pedals',
     href: '#',
-    price: '$165',
-    description: 'Black',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-08.jpg',
-    imageAlt:
-      'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/contact-gunmetal_1200x.jpg?v=1588093586',
+    imageAlt: "Front of bike pedal in gunmetal.",
+    price: '$155',
+    color: 'Gunmetal',
   },
   {
-    id: 9,
-    name: 'Leather Long Wallet',
+    id: 3,
+    name: 'OSX LTD',
     href: '#',
-    price: '$118',
-    description: 'Natural',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-09.jpg',
-    imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
-  },
+    imageSrc: 'https://chromagbikes.com/cdn/shop/products/osx-ltd-group-WEB_1200x.jpg?v=1613929912',
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: '$140',
+    color: 'Black',
+  }
   // More products...
 ]
 
@@ -159,12 +159,12 @@ export default function Page() {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-6 shadow-xl">
+                <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto  py-4 pb-6 shadow-xl">
                   <div className="flex items-center justify-between px-4">
                     <h2 className="text-lg font-medium text-gray-900">Filters</h2>
                     <button
                       type="button"
-                      className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md  p-2 text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                       onClick={() => setMobileFiltersOpen(false)}
                     >
                       <span className="sr-only">Close menu</span>
@@ -179,7 +179,7 @@ export default function Page() {
                         {({ open }) => (
                           <>
                             <h3 className="-mx-2 -my-3 flow-root">
-                              <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-3 text-sm text-gray-400">
+                              <Disclosure.Button className="flex w-full items-center justify-between  px-2 py-3 text-sm text-gray-400">
                                 <span className="font-medium text-gray-900">{section.name}</span>
                                 <span className="ml-6 flex items-center">
                                   <ChevronDownIcon
@@ -198,7 +198,7 @@ export default function Page() {
                                       name={`${section.id}[]`}
                                       defaultValue={option.value}
                                       type="checkbox"
-                                      className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                      className="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500"
                                     />
                                     <label
                                       htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
@@ -226,7 +226,7 @@ export default function Page() {
             <div className="py-24 text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
               <p className="mx-auto mt-4 max-w-3xl text-base text-gray-500">
-                Thoughtfully designed objects for the workspace, home, and travel.
+                New products at The Bike Shack. Check out the latest gear and accessories for your next ride.
               </p>
             </div>
 
@@ -257,7 +257,7 @@ export default function Page() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute left-0 z-10 mt-2 w-40 origin-top-left rounded-md  shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <div className="py-1">
                         {sortOptions.map((option, i) => (
                           <Menu.Item key={i}>
@@ -314,7 +314,7 @@ export default function Page() {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <Popover.Panel className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Popover.Panel className="absolute right-0 z-10 mt-2 origin-top-right rounded-md  p-4 shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
                           <form className="space-y-4">
                             {section.options.map((option, optionIdx) => (
                               <div key={option.value} className="flex items-center">
@@ -323,7 +323,7 @@ export default function Page() {
                                   name={`${section.id}[]`}
                                   defaultValue={option.value}
                                   type="checkbox"
-                                  className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                  className="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500"
                                 />
                                 <label
                                   htmlFor={`filter-${section.id}-${optionIdx}`}
@@ -362,7 +362,7 @@ export default function Page() {
                       <h3>{product.name}</h3>
                       <p>{product.price}</p>
                     </div>
-                    <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
+                    <p className="mt-1 text-sm italic text-gray-500">Lorem ipsum</p>
                   </a>
                 ))}
               </div>
@@ -371,7 +371,7 @@ export default function Page() {
             <section aria-labelledby="featured-heading" className="relative mt-16 overflow-hidden rounded-lg lg:h-96">
               <div className="absolute inset-0">
                 <img
-                  src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+                  src="https://chromagbikes.com/cdn/shop/products/chromag-riza-stem-group_1000x.jpg?v=1665617735"
                   alt=""
                   className="h-full w-full object-cover object-center"
                 />
@@ -381,17 +381,17 @@ export default function Page() {
               <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
                 <div>
                   <h2 id="featured-heading" className="text-xl font-bold text-white">
-                    Workspace Collection
+                    Chromag Riza
                   </h2>
                   <p className="mt-1 text-sm text-gray-300">
-                    Upgrade your desk with objects that keep you organized and clear-minded.
+                    The ultimate collection of high-performance bikes designed for thrill-seekers and adventure enthusiasts.
                   </p>
                 </div>
                 <a
                   href="#"
-                  className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
+                  className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25  bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
                 >
-                  View the collection
+                  View Collection
                 </a>
               </div>
             </section>
@@ -415,7 +415,7 @@ export default function Page() {
                       <h3>{product.name}</h3>
                       <p>{product.price}</p>
                     </div>
-                    <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
+                    <p className="mt-1 text-sm italic text-gray-500">Lorem ipsum</p>
                   </a>
                 ))}
               </div>

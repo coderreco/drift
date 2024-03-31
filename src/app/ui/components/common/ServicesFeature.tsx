@@ -42,10 +42,10 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">In the shop</h2>
+          <h2 className="text-base font-semibold leading-7 text-emerald-600">In the shop</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">No server? No problem.</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             When you bring your bike to us for maintenance or repair, we&apos;ll assess your bike&apos;s needs and provide you with a free, no-obligation estimate. Whether your bike is in need of a minor adjustment or a major overhaul, we promise that your ride is in good hands. Check out our most popular service packages and contact us today with any questions.
@@ -71,7 +71,7 @@ export default function Services() {
           {features.map((feature) => (
             <div key={feature.name} className="relative pl-9">
               <dt className="inline font-semibold text-gray-900">
-                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-emerald-600" aria-hidden="true" />
                 {feature.name}
               </dt>{' '}
               <dd className="inline">{feature.description}</dd>

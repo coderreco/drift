@@ -48,10 +48,10 @@ export default function Services() {
   const [frequency, setFrequency] = useState(frequencies[0])
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Servicing</h2>
+          <h2 className="text-base font-semibold leading-7 text-emerald-600">Servicing</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Bike services for every rider
           </p>
@@ -73,7 +73,7 @@ export default function Services() {
                 value={option}
                 className={({ checked }) =>
                   classNames(
-                    checked ? 'bg-indigo-600 text-white' : 'text-gray-500',
+                    checked ? 'bg-emerald-600 text-white' : 'text-gray-500',
                     'cursor-pointer rounded-full px-2.5 py-1'
                   )
                 }
@@ -88,7 +88,7 @@ export default function Services() {
             <div
               key={tier.id}
               className={classNames(
-                tier.mostPopular ? 'ring-2 ring-indigo-600' : 'ring-1 ring-gray-200',
+                tier.mostPopular ? 'ring-2 ring-emerald-600' : 'ring-1 ring-gray-200',
                 'rounded-3xl p-8 xl:p-10'
               )}
             >
@@ -96,14 +96,14 @@ export default function Services() {
                 <h3
                   id={tier.id}
                   className={classNames(
-                    tier.mostPopular ? 'text-indigo-600' : 'text-gray-900',
+                    tier.mostPopular ? 'text-emerald-600' : 'text-gray-900',
                     'text-lg font-semibold leading-8'
                   )}
                 >
                   {tier.name}
                 </h3>
                 {tier.mostPopular ? (
-                  <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                  <p className="rounded-full bg-emerald-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-emerald-600">
                     Most popular
                   </p>
                 ) : null}
@@ -119,9 +119,9 @@ export default function Services() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500'
-                    : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                  'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    ? 'bg-emerald-600 text-white shadow-sm hover:bg-emerald-500'
+                    : 'text-emerald-600 ring-1 ring-inset ring-emerald-200 hover:ring-emerald-300',
+                  'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'
                 )}
               >
                 Book a service
@@ -129,12 +129,12 @@ export default function Services() {
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
-                    <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                    <CheckIcon className="h-6 w-5 flex-none text-emerald-600" aria-hidden="true" />
                     {feature}
                   </li>
                 ))}
                   <li className="flex gap-x-3">
-                    <PlusIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                    <PlusIcon className="h-6 w-5 flex-none text-emerald-600" aria-hidden="true" />
                     And more...
                   </li>
               </ul>
@@ -142,7 +142,7 @@ export default function Services() {
           ))}
         </div>
         <div className='mx-auto mt-16 max-w-2xl text-center text-gray-600'>
-          <Button variant='solid' color='indigo' href='#'>Service breakdown</Button>
+          <Button variant='solid' color='emerald' href='#'>Service breakdown</Button>
           </div>
       </div>
     </div>

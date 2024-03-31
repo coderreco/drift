@@ -7,7 +7,7 @@ import { Logo } from './Logo'
 const navigation = {
   categories: [
     {
-      name: 'Women',
+      name: 'Gear',
       clothing: [
         [
           { name: 'Tops', href: '#' },
@@ -41,7 +41,39 @@ const navigation = {
       ],
     },
     {
-      name: 'Men',
+      name: 'Apparel',
+      clothing: [
+        [
+          { name: 'Dress Shirts', href: '#' },
+          { name: 'Pants', href: '#' },
+          { name: 'Jackets', href: '#' },
+          { name: 'T-Shirts', href: '#' },
+          { name: 'Jeans', href: '#' },
+          { name: 'Hoodies', href: '#' },
+        ],
+        [
+          { name: 'Vests', href: '#' },
+          { name: 'Kilts', href: '#' },
+          { name: 'Outdoors', href: '#' },
+          { name: 'Capes', href: '#' },
+          { name: 'Browse All', href: '#' },
+        ],
+      ],
+      accessories: [
+        { name: 'Watches', href: '#' },
+        { name: 'Boots', href: '#' },
+        { name: 'Fanny Packs', href: '#' },
+        { name: 'Sunglasses', href: '#' },
+        { name: 'Browse All', href: '#' },
+      ],
+      categories: [
+        { name: 'Just Added', href: '#' },
+        { name: 'Clearance', href: '#' },
+        { name: 'Graphic Tees', href: '#' },
+      ],
+    },
+    {
+      name: 'Bikes',
       clothing: [
         [
           { name: 'Dress Shirts', href: '#' },
@@ -85,8 +117,8 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <div className="bg-white">
-      <header className="relative z-10 bg-white">
+    <div className="">
+      <header className="relative z-10">
         <nav aria-label="Top" className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="border-b border-gray-200 px-4 pb-14 sm:px-0 sm:pb-0">
             <div className="flex h-16 items-center justify-between">
@@ -109,7 +141,7 @@ export default function Navbar() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'border-indigo-600 text-indigo-600'
+                                  ? 'border-emerald-600 text-emerald-600'
                                   : 'border-transparent text-gray-700 hover:text-gray-800',
                                 'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                               )}
@@ -127,11 +159,11 @@ export default function Navbar() {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Popover.Panel className="absolute inset-x-0 top-full text-gray-500 sm:text-sm">
+                            <Popover.Panel className="absolute inset-x-0 top-full bg-zinc-50 text-gray-500  sm:text-sm">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                              <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                              <div className="absolute inset-0 top-1/2  shadow" aria-hidden="true" />
 
-                              <div className="relative bg-white">
+                              <div className="relative ">
                                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                                   <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10 pb-12 pt-10 md:grid-cols-2 lg:gap-x-8">
                                     <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:gap-x-8">
