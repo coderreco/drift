@@ -46,11 +46,11 @@ export default function FeatureWithImage({eyebrow, heading, subheading}: {eyebro
               </dl>
             </div>
           </div>
-          <div className="flex items-start relative justify-end w-full h-full bg-emerald-200 lg:order-first">
+          <div className="flex items-start relative justify-center sm:justify-end w-full h-full bg-emerald-200 lg:order-first">
             <Image
               src={markAir}
               alt="Product screenshot"
-              className="w-[48rem] 2xl:w-full 2xl:rounded max-w-none h-full object-cover object-right shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              className="w-[48rem] rounded sm:rounded-none 2xl:w-full 2xl:rounded max-w-none h-full object-cover object-right shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
               width={2432}
               height={1442}
             />
